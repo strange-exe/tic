@@ -1,0 +1,19 @@
+{
+    "name": "Tic Tac Toe",
+    "short_name": "TicTacToe",
+    "description": "Play Tic Tac Toe online with friends, challenge the unbeatable AI, or play locally.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#06060f",
+    "theme_color": "#6366f1",
+    "icons": [
+        {
+            "src": "/asset/icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
