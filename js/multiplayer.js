@@ -61,7 +61,7 @@ const Multiplayer = (() => {
     function wire(cb) {
         conn.on("data", d => {
             if (!d || typeof d !== "object") return;
-            if (d.type === "handshake" && typeof d.name === "string") {
+            if ((d.type === "handshake" || d.type === "hello") && typeof d.name === "string") {
                 opponentName = d.name.trim().slice(0, 20) || "Opponent";
                 if (cb.onOpponentName) cb.onOpponentName(opponentName);
                 if (cb.onConnected) cb.onConnected();
